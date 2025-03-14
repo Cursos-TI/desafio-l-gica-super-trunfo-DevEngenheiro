@@ -1,27 +1,14 @@
-<<<<<<< HEAD
 // Desafio Super Trunfo - Cidades
 // Tema 2 - Comparando Cartas do Super Trunfo
 // Desafio: nível novato
 // Este código inicial serve como base para o desenvolvimento do sistema de comparação entre duas cartas já cadastradas, utilizando 
 //estruturas de decisão if e if-else.
-=======
-#include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
->>>>>>> c87d3168ba89c487207abde67e1abc83c7ee0108
 
 #include <stdio.h>    // Para entrada/saída
 #include <string.h>   // Para funções de manipulação de strings (ex.: strcspn)
-
+   
 int main() {
-
+   
     // Variáveis para a Carta 1:
     char estado1;                  // Armazena a letra do estado (A-H)
     char codigo1[4];               // Armazena o código da carta (ex: A01) + '\0'
@@ -34,15 +21,15 @@ int main() {
     float pib_per_capita1;         // PIB per Capita (PIB / população)
 
     // Variáveis para a Carta 2:
-    char estado2;                  // Armazena a letra do estado (A-H)
-    char codigo2[4];               // Armazena o código da carta (ex: A01) + '\0'
-    char nome_cidade2[50];         // Armazena o nome da cidade (até 49 caracteres + '\0')
-    int populacao2;                // População da cidade
-    float area2;                   // Área da cidade em km²
-    float pib2;                    // PIB da cidade
-    int pontos_tur2;               // Número de pontos turísticos
-    float densidade2;              // Densidade populacional
-    float pib_per_capita2;         // PIB per Capita
+    char estado2;          // Armazena a letra do estado (A-H)
+    char codigo2[4];       // Armazena o código da carta (ex: A01) + '\0'
+    char nome_cidade2[50]; // Armazena o nome da cidade (até 49 caracteres + '\0')
+    int populacao2;        // População da cidade
+    float area2;           // Área da cidade em km²
+    float pib2;            // PIB da cidade
+    int pontos_tur2;       // Número de pontos turísticos
+    float densidade2;      // Densidade populacional
+    float pib_per_capita2; // PIB per Capita
 
     // Mensagem de Boas-Vindas
     printf("Bem vindo ao Super Trunfo Cidades\n");
@@ -84,9 +71,9 @@ int main() {
     scanf("%d", &pontos_tur1);
 
     // Cálculos para a Carta 1:
-    densidade1 = (float)populacao1 / area1;           // Densidade populacional = população / área
-    pib_per_capita1 = pib1 / (float)populacao1;         // PIB per Capita = PIB / população
-    
+    densidade1 = (float)populacao1 / area1;     // Densidade populacional = população / área
+    pib_per_capita1 = pib1 / (float)populacao1; // PIB per Capita = PIB / população
+
     /* ========= LEITURA DOS DADOS DA CARTA 2 ========= */
     printf("\nDigite os dados da Carta 2:\n");
 
@@ -106,7 +93,6 @@ int main() {
     fgets(nome_cidade2, 50, stdin);
     nome_cidade2[strcspn(nome_cidade2, "\n")] = '\0';
 
-<<<<<<< HEAD
     // População
     printf("Digite a população da cidade (Carta 2): ");
     scanf("%d", &populacao2);
@@ -160,67 +146,82 @@ int main() {
     printf("\n======== Comparação de Cartas =======\n");
 
     // Comparação da População (maior vence)
-    if (populacao1 > populacao2) {
+    if (populacao1 > populacao2)
+    {
         printf("A cidade de %s tem a maior população\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem a maior população\n", nome_cidade2);
     }
 
     // Comparação da Área (maior vence)
-    if (area1 > area2) {
+    if (area1 > area2)
+    {
         printf("A cidade de %s tem a maior área\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem a maior área\n", nome_cidade2);
     }
 
     // Comparação do PIB (maior vence)
-    if (pib1 > pib2) {
+    if (pib1 > pib2)
+    {
         printf("A cidade de %s tem o maior PIB\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem o maior PIB\n", nome_cidade2);
     }
 
     // Comparação dos Pontos Turísticos (maior vence)
-    if (pontos_tur1 > pontos_tur2) {
+    if (pontos_tur1 > pontos_tur2)
+    {
         printf("A cidade de %s tem o maior número de Pontos Turísticos\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem o maior número de Pontos Turísticos\n", nome_cidade2);
     }
 
     // Comparação da Densidade Populacional (menor vence)
-    if (densidade1 < densidade2) {
+    if (densidade1 < densidade2)
+    {
         printf("A cidade de %s tem a menor Densidade Populacional\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem a menor Densidade Populacional\n", nome_cidade2);
     }
 
     // Comparação do PIB per Capita (maior vence)
-    if (pib_per_capita1 > pib_per_capita2) {
+    if (pib_per_capita1 > pib_per_capita2)
+    {
         printf("A cidade de %s tem o maior PIB per Capita\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("A cidade de %s tem o maior PIB per Capita\n", nome_cidade2);
     }
 
     printf("=====================================\n");
 
-        /* ========= RESULTADO DETALHADO DA COMPARAÇÃO ========= */
+    /* ========= RESULTADO DETALHADO DA COMPARAÇÃO ========= */
     printf("\n===========================================\n");
     printf("Comparação de cartas (Atributo: População):\n");
     printf("===========================================\n");
     printf("Carta 1 - %s (%s): %d hab\n", nome_cidade1, codigo1, populacao1);
     printf("Carta 2 - %s (%s): %d hab\n", nome_cidade2, codigo2, populacao2);
-    if (populacao1 > populacao2) {
+    if (populacao1 > populacao2)
+    {
         printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
-    } else {
+    }
+    else
+    {
         printf("Resultado: Carta 2 (%s) venceu!\n", nome_cidade2);
     }
     printf("===========================================\n");
 
     return 0; // Indica que o programa terminou com sucesso
-=======
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-    return 0;
->>>>>>> c87d3168ba89c487207abde67e1abc83c7ee0108
 }
