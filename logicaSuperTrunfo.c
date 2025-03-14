@@ -193,8 +193,8 @@ int main() {
     printf("\n===========================================\n");
     printf("Comparação de cartas (Atributo: População):\n");
     printf("===========================================\n");
-    printf("Carta 1 - %s (%s): %d\n", nome_cidade1, codigo1, populacao1);
-    printf("Carta 2 - %s (%s): %d\n", nome_cidade2, codigo2, populacao2);
+    printf("Carta 1 - %s (%s): %d hab\n", nome_cidade1, codigo1, populacao1);
+    printf("Carta 2 - %s (%s): %d hab\n", nome_cidade2, codigo2, populacao2);
     if (populacao1 > populacao2) {
         printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
     } else {
