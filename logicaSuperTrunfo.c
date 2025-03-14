@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 // Desafio Super Trunfo - Cidades
 // Tema 2 - Comparando Cartas do Super Trunfo
 // Desafio: nível novato
 // Este código inicial serve como base para o desenvolvimento do sistema de comparação entre duas cartas já cadastradas, utilizando 
 //estruturas de decisão if e if-else.
+=======
+#include <stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 2 - Comparação das Cartas
+// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
+// Siga os comentários para implementar cada parte do desafio.
+
+int main() {
+    // Definição das variáveis para armazenar as propriedades das cidades
+    // Você pode utilizar o código do primeiro desafio
+>>>>>>> c87d3168ba89c487207abde67e1abc83c7ee0108
 
 #include <stdio.h>    // Para entrada/saída
 #include <string.h>   // Para funções de manipulação de strings (ex.: strcspn)
@@ -93,6 +106,7 @@ int main() {
     fgets(nome_cidade2, 50, stdin);
     nome_cidade2[strcspn(nome_cidade2, "\n")] = '\0';
 
+<<<<<<< HEAD
     // População
     printf("Digite a população da cidade (Carta 2): ");
     scanf("%d", &populacao2);
@@ -203,4 +217,10 @@ int main() {
     printf("===========================================\n");
 
     return 0; // Indica que o programa terminou com sucesso
+=======
+    // Exemplo:
+    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+
+    return 0;
+>>>>>>> c87d3168ba89c487207abde67e1abc83c7ee0108
 }
