@@ -1,7 +1,7 @@
 /*
  * Desafio Super Trunfo - Cidades
  * Tema 2 - Comparando Cartas do Super Trunfo
- * Desafio: nível novato com adição do nível aventureiro (menu interativo)
+ * Desafio: nível aventureiro
  */
 
  #include <stdio.h>    // Para entrada/saída
